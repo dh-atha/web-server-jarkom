@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-Server</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-900">
+    <div class="text-center">
+      <h1 class="text-5xl font-extrabold text-white mb-4">Welcome bro! 🚀</h1>
+      <p id="pid" class="text-3xl text-green-400">
+        This request is handled by: {{.ServerID}}
+      </p>
+      <p class="text-gray-400 mt-4">
+        This page is served by one of the preforked processes.
+      </p>
+    </div>
+  </body>
+</html>
