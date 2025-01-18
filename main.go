@@ -59,6 +59,8 @@ func main() {
 		return err
 	})
 
+	app.Static("/public", "./public")
+
 	app.Get("/", func(c *fiber.Ctx) error {
 		tmpl, err := template.ParseFiles("public/index.html")
 		if err != nil {
